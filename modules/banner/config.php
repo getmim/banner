@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'banner',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/banner.git',
     '__license' => 'MIT',
     '__author' => [
@@ -75,7 +75,8 @@ return [
                 ],
                 'type' => [
                     'type' => 'enum',
-                    'enum' => 'banner.type'
+                    'enum' => 'banner.type',
+                    'vtype' => 'int'
                 ],
                 'content' => [
                     'type' => 'json'
