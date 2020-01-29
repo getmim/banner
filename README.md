@@ -10,6 +10,21 @@ Jalankan perintah di bawah di folder aplikasi:
 mim app install banner
 ```
 
+## Konfigurasi
+
+Tambahkan konfigurasi seperti di bawah untuk preset placement pada editor:
+
+```php
+return [
+    'banner' => [
+        'placements' => [
+            'Header',
+            // ...
+        ]
+    ]
+];
+```
+
 ## Tipe
 
 Tipe banner yang didukung sampai saat ini adalah:
