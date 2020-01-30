@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'banner',
-    '__version' => '0.0.2',
+    '__version' => '0.0.3',
     '__git' => 'git@github.com:getmim/banner.git',
     '__license' => 'MIT',
     '__author' => [
