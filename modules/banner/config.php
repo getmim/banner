@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'banner',
-    '__version' => '0.0.3',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/banner.git',
     '__license' => 'MIT',
     '__author' => [
@@ -35,6 +35,10 @@ return [
             'Banner\\Model' => [
                 'type' => 'file',
                 'base' => 'modules/banner/model'
+            ],
+            'Banner\\Library' => [
+                'type' => 'file',
+                'base' => 'modules/banner/library'
             ]
         ],
         'files' => []
