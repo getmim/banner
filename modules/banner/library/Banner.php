@@ -32,15 +32,25 @@ class Banner
             ],
             'html' => '(:html)',
             'gads' => '(:code)',
-            'iframe' => '<iframe src="(url)"></iframe>'
+            'iframe' => '<iframe src="(url)"></iframe>',
+
+            'container' => '(:content)'
         ];
 
         $template = $tmpl_default[$type_text];
         if (isset($templates[$type_text]))
             $template = $templates[$type_text];
-
         if (is_array($template))
             $template = implode(PHP_EOL, $template);
+
+        $container = $tmpl_default['container'];
+        if(isset($templates['container']))
+            $container = $templates['container'];
+        if(is_array($container))
+            $container = implode(PHP_EOL, $container);
+
+        $template = str_replace('(:content)', $template, $container);
+
         return $template;
     }
 
